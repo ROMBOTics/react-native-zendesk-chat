@@ -28,7 +28,7 @@ Follow the instructions to install the SDK for [iOS](https://developer.zendesk.c
 
 2. Add a reference to your Podfile:
 
-   `pod 'RNZendeskChat', :git => 'https://github.com/robertmurray/react-native-zendesk-chat.git'`
+   `pod 'RNZendeskChat', :path => '../node_modules/react-native-zendesk-chat'`
 
    then run pod install: `(cd ios; pod install)`
 
