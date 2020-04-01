@@ -61,12 +61,14 @@ project(':react-native-zendesk-chat').projectDir = new File(rootProject.projectD
 4. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
 
 ```
-compile project(':react-native-zendesk-chat')
+implementation project(':react-native-zendesk-chat')
 ```
 
 5. Configure `ZopimChat` in `android/app/main/java/[...]/MainActivity.java`
 
 ```
+import com.taskrabbit.zendesk.*;
+...
 ZopimChat.init("YOUR_ZENDESK_ACCOUNT_KEY").build();
 ```
 
@@ -75,7 +77,7 @@ ZopimChat.init("YOUR_ZENDESK_ACCOUNT_KEY").build();
 In your code add:
 
 ```
-import ZendeskChat from 'react-native-zendesk-chat
+import ZendeskChat from 'react-native-zendesk-chat'
 
 ...
 
